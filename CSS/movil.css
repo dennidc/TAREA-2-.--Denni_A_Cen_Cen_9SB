@@ -1,0 +1,90 @@
+@media screen and (max-width: 480px){
+    :root{
+        --rojo:#ff4048;
+        --gris:#f5f5f5;
+        --grisF:#bebebe;
+        --blanco:#ffffff;
+        --negro: #000000;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu_contenedor{
+        padding: 10px 10px;
+        position: relative;
+    }
+    .menu ul{
+        flex-direction: column;
+        gap:10px;
+        position: absolute;
+        top: 100%;
+        left: -150%;
+        z-index: 100;
+        width: 100%;
+        background-color: var(--rojo);
+        transition: all 1s linear;
+        padding: 30px;
+    }
+    .menu ul li{
+        border-bottom: 2px dotted var(--gris);
+    }
+    .menu ul li a{
+        color: var(--gris);
+    }
+    .menu{  .abrir_menu {
+        left: 0;
+      }
+    }
+
+    .contenedor_info{
+        top: 10%;
+        left: 10%;
+        z-index: 10;
+        max-width: 400px;
+        padding: 20px;
+        text-align:center;
+        background-color: rgba(255, 66, 76,  0.5);
+
+    }
+    .contenedor_info p{
+        display: none;
+    }
+    .contenedor_info h2{
+        color: var(--gris);
+    }
+    .sombra{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        padding: 50px;
+    }
+
+    .contenedor_fotos {
+        display: grid;
+        grid-template: repeat(4, auto) /  auto;
+        grid-template-areas:"yoga" "mujer" "gym" "hombre" ;
+        max-width: 800px;
+        padding: 20px;
+        gap:20px;
+    }
+    .galeria_contenedor{
+        flex-direction: column-reverse;
+    }
+    .pie p{
+        display: none;
+    }
+
+    .arriba{
+        position: absolute;
+        z-index: 11;
+        top: 100;
+        right: 0%;
+    }
+
+    .pie{
+        position: relative;
+        margin-left: -100px;
+        margin-right: 100px;
+    }
+    .servicios_contenedor h2{
+        margin-bottom: 80px;
+     }
+}

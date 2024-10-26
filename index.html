@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/movil.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2ebd543e82.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="CSS/responsiveslides.js"></script>
+    <script src="CSS/fancybox.js"></script>
+    <link rel="stylesheet" href="CSS/fancybox.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <script src="CSS/wow.min.js"></script>
+    <title>GIMNASIO</title>
+  </head>
+  <body>
+    <header class="menu_contenedor">
+      <div class="logo">
+        <img src="CSS/imagenes/logo.png" alt="Logo Gimnasio" />
+      </div>
+      <nav class="menu">
+          <div class="menu-icon" id="iconomenu">
+            <i class="fas fa-bars"></i>
+          </div>
+        <ul id="contenedor_menu">
+          <li><a class="cierra" href="#">HOME</a></li>
+          <li><a class="cierra" href="#servicios">SERVICES</a></li>
+          <li><a class="cierra" href="#galeria">GALLERY</a></li>
+          <li><a class="cierra" href="#">COACHES</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contenedor">
+      <ul class="rslides">
+        <li><img src="CSS/imagenes/slide1.jpg" alt="" /></li>
+        <li><img src="CSS/imagenes/slide2.jpg" alt="" /></li>
+        <li><img src="CSS/imagenes/slide3.jpg" alt="" /></li>
+      </ul>
+
+      <div class="contenedor_info">
+        <h2>BEST FITNESS</h2>
+        <br />
+        <p>
+          Our club encourages welllness by providing top-notch equipment,
+          first-class instructors, innovative classes, and qualifed staff.
+        </p>
+        <br />
+        <a href="#" class="btn">JOIN NOW</a>
+      </div>
+    </section>
+    <section id="servicios"  class="servicios_contenedor">
+      <h2 >SERVICES</h2>
+      <div class="servicios ancho">
+        <div class="sombra sombra wow animate__animated animate__slideInLeft">
+          <div class="contenedor_icono">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="servicio_descripcion">
+            <h3>QUALITY SERVICE</h3>
+            <p>
+              At our fitness studio, you can experience the best level of
+              customer service.
+            </p>
+          </div>
+        </div>
+        <div  class="sombra wow animate__animated animate__slideInLeft">
+          <div  class="contenedor_icono">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <div class="servicio_descripcion">
+            <h3>SPACIOUS GYM</h3>
+            <p>
+              Our gym has enough place for all kinds of workouts and a wide
+              variety of equipment.
+            </p>
+          </div>
+        </div>
+        <div  class="sombra wow  animate__animated animate__slideInRight">
+          <div  class="contenedor_icono">
+            <i class="fas fa-file-invoice"></i>
+          </div>
+          <div class="servicio_descripcion">
+            <h3>UNIQUE FITNESS PROGRAMS</h3>
+            <p>
+              Our coaches have developed more than 50 fitness programs and
+              workouts for you.
+            </p>
+          </div>
+        </div>
+        <div  class="sombra wow animate__animated animate__slideInRight">
+
+          <div class="contenedor_icono">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="servicio_descripcion">
+            <h3>QUALITY SERVICE</h3>
+            <p>
+              At our fitness studio, you can experience the best level of
+              customer service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección de galeria -->
+    <section id="galeria" class="galeria_contenedor">
+        <div class="contenedor_fotos">
+            <a class="foto1" href="CSS/imagenes/foto1.jpg" data-fancybox="gallery" data-caption="fotografia 1">
+                <figure class="fotos">
+                    <img src="CSS/imagenes/foto1.jpg" alt="">
+                </figure>
+            </a>
+            <a class="foto2" href="CSS/imagenes/foto3.jpg" data-fancybox="gallery" data-caption="fotografia 2">
+                <figure class="fotos">
+                    <img src="CSS/imagenes/foto3.jpg" alt="">
+                </figure>
+            </a>
+            <a class="foto3" href="CSS/imagenes/foto4.jpg" data-fancybox="gallery" data-caption="fotografia 3">
+                <figure class="fotos">
+                    <img src="CSS/imagenes/foto4.jpg" alt="">
+                </figure>
+            </a>
+            <a class="foto4" href="CSS/imagenes/foto2.jpg" data-fancybox="gallery" data-caption="fotografia 4">
+                <figure class="fotos">
+                    <img src="CSS/imagenes/foto2.jpg" alt="">
+                </figure>
+            </a>
+        </div>
+        <div class="galeria_descripcion">
+            <h2>GALLERY <span>FITNESS</span> CLUB</h2>
+            <p>
+            Profit is the fitness club that makes fitness totally accessible to
+            everydoby. We promise to help people from all walks of life achieve
+            their individual health and fitness goals - no matter their shape,
+            age, and expesience.
+            </p>
+            <a class="btn" href="#">JOIN NOW</a>
+        </div>
+    </section>
+    <div id="scroll-Btn" class="arriba">
+        <a href="">^</a>
+    </div>
+    <hr>
+    <footer>
+        <div class="pie">
+            <div>
+                <p>© 2020 Profit. Privacy Policy</p>
+              </div>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+        </div>
+    </footer>
+
+    <script>
+        /* funcion de Slide */
+      $(function () {
+        $(".rslides").responsiveSlides();
+      });
+
+      /* funcion de galeria */
+      Fancybox.bind('[data-fancybox="gallery"]', {
+                // Your custom options for a specific gallery
+            });
+    /* para que se oculte el menu */
+    $("#iconomenu").click(function() {
+            $("#contenedor_menu").toggleClass("abrir_menu");
+        });
+    $(".cierra").click(function() {
+            $("#contenedor_menu").toggleClass("abrir_menu");
+        });
+    /* animacion wow */
+      new WOW().init();
+
+    /* scroll al principio */
+    $('#scroll-Btn').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 800); // 800 ms para el efecto de desplazamiento suave
+    return false;
+  });
+    </script>
+  </body>
+</html>
